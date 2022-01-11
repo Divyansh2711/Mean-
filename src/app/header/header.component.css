@@ -1,0 +1,53 @@
+img{
+    margin: 1rem;
+    height: 250px;
+    width: 90%;
+}
+.space{
+    padding-left: 80px;
+}
+nav{
+    padding-left: 40px;
+}
+#navbarNav ul a{
+    padding-left: 30px;
+    font-family: Pushster;
+    color: white;
+    font-size: x-large;
+}
+#navbarNav ul a:hover{
+    color: rgb(185, 183, 183);
+}
+
+#navbarNav ul a:active{
+    color: rgb(45, 124, 155);
+}
+
+.icons{
+    padding-left: 140px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  } 
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+ .fa-instagram {
+    background: #125688;
+    color: white;
+  }

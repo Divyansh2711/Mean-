@@ -1,0 +1,35 @@
+<div class="footer">
+    <img 
+    src="https://th.bing.com/th/id/R.539079c9c9e82c857395f2c51a13ba6a?rik=tv%2fj24FGuTsRYg&riu=http%3a%2f%2fmediad.publicbroadcasting.net%2fp%2fkstx%2ffiles%2fstyles%2fx_large%2fpublic%2f201709%2fBotanica_LOGO_Alt_Lockup_Date_Large.png&ehk=GLZlR9ZUIgNOHN2i%2f91aDwJuqBXpajzOvAzp08eUCyA%3d&risl=&pid=ImgRaw&r=0" alt="">
+    <br>
+    <p><strong>Subscribe to our email newsletter to get updates on the future events, workshops, and</strong></p>
+    <p><strong>Competitions.</strong></p>
+    <br>
+
+    <form [formGroup]="subscribeForm" (ngSubmit)="onSubscribe()">
+        <div>
+            <input type="email" formControlName="email" placeholder="Enter Your Email" required>
+            <button id="subscribe" type="button" (click)="onSubscribe()" [disabled]="subscribeForm.invalid"><strong>SUBSCRIBE</strong></button>
+            <div class="alert alert-danger" *ngIf="subscribeForm.controls['email'].touched && subscribeForm.controls['email'].invalid">
+                <strong class="error" >Please enter a valid email ID.</strong>
+            </div>
+            <div class="alert alert-success" role="alert" *ngIf="alert">
+                <strong>Thank you for signing up!</strong>&nbsp;We'll stay in touch.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="onalertclose()">
+                  <span aria-hidden="true"><strong>&times;</strong></span>
+                </button>
+            </div>
+        </div>
+    </form>
+    <br>
+    <br>
+    <div class="icons">
+        <a href="https://www.facebook.com/botanicamusicfest/" class="fa fa-facebook"></a>&nbsp;
+        <a href="https://www.youtube.com/watch?v=LCb2wCuL6GY" class="fa fa-youtube"></a>&nbsp;
+        <a href="https://www.instagram.com/botanicamusicfest/" class="fa fa-instagram"></a>&nbsp;
+      </div>
+      <br>
+      <br>
+      <p style="color: rgb(65, 63, 63);"><strong>COPYRIGHT&nbsp;&copy; 2022 <span style="color: #3B5998;" ><a routerLink="/">BOTANICA</a></span>. ALL RIGHTS RESERVED</strong></p>
+      <br><br><br><br>
+</div>

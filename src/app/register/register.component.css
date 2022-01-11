@@ -1,0 +1,31 @@
+.help-block{
+    color: red;
+}
+input.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+.row{
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+button:hover{
+   color: white;
+   background-color: rgb(29, 167, 29);
+}
+label{
+    font-size:large;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.col-md-6,.col-md-8{
+    position: relative;
+    width: 100%;
+    padding-right: 50px;
+}

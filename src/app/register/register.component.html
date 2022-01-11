@@ -1,0 +1,88 @@
+<app-header></app-header>
+<br>
+<div class="form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="https://preview.colorlib.com/theme/bootstrap/signup-form-07/images/undraw_remotely_2j6y.svg" alt="">
+            </div>
+            <div class="col-md-6 contents">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                    <div class="mb-4">
+                         <h3>Sign Up</h3>
+                    </div>
+                    <div class="alert alert-success" role="alert" *ngIf="alert">
+                        <strong>You have been successfully registered.</strong> 
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="onclose()"
+                        style="float: right;">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                    <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                        <div class="form-group">
+                            <label for="userName">Full Name</label>
+                            <input type="text" name="userName" class="form-control" formControlName="userName">
+                            <span class="help-block" *ngIf="registrationForm.controls['userName'].touched && registrationForm.controls['userName'].invalid">
+                                Please enter a valid Name!
+                            </span>
+                        </div><br>
+          
+                        <div class="form-group">
+                          <label for="emailID">Email ID</label>
+                          <input type="text" name="emailID" class="form-control" formControlName="email">
+                          <span class="help-block" *ngIf="registrationForm.controls['email'].touched && registrationForm.controls['email'].invalid">
+                              Please enter a Email-ID!
+                          </span>
+                      </div><br>
+          
+                      <div class="form-group">
+                          <label for="collegeName">College Name</label>
+                          <input type="text" name="collegeName" class="form-control" formControlName="collegeName">
+                          <span class="help-block" *ngIf="registrationForm.controls['collegeName'].touched && registrationForm.controls['collegeName'].invalid">
+                              Please enter a College Name!
+                          </span>
+                      </div><br>
+          
+                      <div class="form-group">
+                          <label for="dob">DOB</label>
+                          <input type="date" name="dob" class="form-control" formControlName="dob">
+                          <span class="help-block" *ngIf="registrationForm.controls['dob'].touched && registrationForm.controls['dob'].invalid">
+                              Please enter a valid Date of Birth!
+                          </span>
+                      </div><br>
+          
+                      <div class="form-group" *ngFor="let gender of genders">
+                          <input type="radio" [value]="gender" formControlName="gender">&nbsp;{{gender}}
+                        </div><br>
+                        
+          
+                      <div class="form-group">
+                          <label for="phone" >Phone No</label>
+                          <input type="text" name="phone" class="form-control" formControlName="mobile">
+                          <span class="help-block" *ngIf="registrationForm.controls['mobile'].touched && registrationForm.controls['mobile'].invalid">
+                              Please enter a valid Mobile No.!
+                          </span>
+                      </div><br>
+          
+                      <div class="form-group">
+                          <label for="password" >Password</label>
+                          <input type="password" name="password" class="form-control" formControlName="password">
+                          <span class="help-block" *ngIf="registrationForm.controls['password'].touched && registrationForm.controls['password'].invalid">
+                             <p> Please enter a valid Password!</p>
+                             <p>Password should contain at least one Upper Case, one lower case, one special character, one number and min length should atlease be '8'.</p>
+                          </span>
+                      </div><br>
+          
+                      <div class="form-group">
+                          <button  class="btn btn-primary" type="submit" [disabled]="!registrationForm.valid" style="color: black;">Register</button>
+                      </div><br>
+                      
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+<app-footer></app-footer>

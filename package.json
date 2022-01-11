@@ -6,7 +6,8 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "server": "nodemon C:/Users/thede/CogniFiesta/src/backend/server.js"
   },
   "private": true,
   "dependencies": {
@@ -18,6 +19,10 @@
     "@angular/platform-browser": "~12.0.3",
     "@angular/platform-browser-dynamic": "~12.0.3",
     "@angular/router": "~12.0.3",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "bootstrap": "^5.1.3",
+    "mongoose": "^6.1.5",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
@@ -34,6 +39,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "nodemon": "^2.0.15",
     "typescript": "~4.2.3"
   }
 }

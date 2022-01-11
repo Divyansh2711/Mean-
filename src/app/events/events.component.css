@@ -1,0 +1,57 @@
+#id{
+    background-color: aliceblue;
+}
+.intro{
+    background-color: rgb(45, 124, 155);
+    text-align: center;
+    border: 10rem solid rgb(45, 124, 155);
+}
+#line{
+    font-weight: Pushster;
+    color: white;
+    font-size:2cm;
+    line-height: 55px;
+}
+p{
+    font-weight: Pushster;
+    color: white;
+    font-size: small; 
+}
+p a{
+    color: aquamarine;
+    text-decoration: none;
+}
+p a:hover{
+    color: blue;
+}
+
+.events{
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .days{
+      text-align: center;
+  }
+  span{
+      padding-left: 10px;
+  }
+
+  .days p button{
+      color:grey;
+      font-size: x-large;
+      letter-spacing: 2px;
+      padding: .5em .8em;
+      position: relative;
+      text-decoration: none;
+      font-size: 20px;
+  }
+ .days p button:hover {
+  background-color: #7dca95;
+  color: black;
+}
+.days p button:active{
+    background-color: #7dca95;
+    color: black;
+}

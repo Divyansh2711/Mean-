@@ -1,0 +1,19 @@
+<div id="id">
+    <app-header></app-header>
+<div class="intro">
+    <p id="line">
+        Event Itinerary
+    </p>
+    <p>
+        <a routerLink="/">Home</a>&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;&nbsp;Events
+    </p>
+</div>
+<div class="events">
+    <div class="days">
+        <p><button type="button" (click)="day1()">Mar3</button>&nbsp;<span><button type="button" (click)="day2()">Mar4</button></span></p>
+        <app-day1 *ngIf="Day1"></app-day1>
+        <app-day2 *ngIf="Day2"></app-day2>
+    </div>
+</div>
+</div>
+<app-footer></app-footer>

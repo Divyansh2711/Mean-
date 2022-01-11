@@ -1,0 +1,99 @@
+.footer{
+    text-align: center;
+    background-color:rgb(37, 37, 37);
+}
+img{
+    
+    margin: 2rem;
+    height: 200px;
+    width: 300px;
+}
+p{
+    font-weight: Pushster;
+    color: white;
+    font-size: large;
+    line-height: 10px;
+}
+input{
+    height: 5rem;
+    width: 30%;
+    background-color:rgb(37, 37, 37) ;
+    color: rgb(141, 139, 139);
+    font-weight:Pushster ;
+    box-sizing: border-box;
+    padding: 20px;  
+  border: 10px solid rgb(37, 37, 37) ;
+  
+}
+input:focus{
+   outline:1px solid black;
+}
+#subscribe{
+    background-color: rgb(45, 124, 155);
+    border: 10px solid rgb(37, 37, 37) ;
+    height: 5rem;
+    width: 20%;
+    text-align: center;
+}
+#subscribe:hover{
+   background-color: rgb(67, 172, 119);
+}
+#subscribe:focus{
+    outline: none;
+}
+div.alert.alert-success{
+    margin-left: 20rem;
+    margin-right: 20rem;
+    color: white;
+    background-color: rgb(43, 175, 87);
+    outline: 1px solid rgb(43, 175, 87);
+}
+.close{
+    background-color: rgb(43, 175, 87) ;
+    color: white;
+    border: none;
+    float: right;
+}
+div.alert.alert-danger{
+    margin-left: 20rem;
+    margin-right: 20rem;
+    color: white;
+    background-color: rgb(224, 96, 96);
+    outline: 1px solid rgb(224, 96, 96);
+}
+.error{
+    color:white;
+}
+
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  } 
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+ .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  a{
+      text-decoration: none;
+      cursor: pointer;
+      color: rgb(45, 124, 155);
+  }
+
